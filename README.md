@@ -1,8 +1,6 @@
-# React + Vite
+# Projeto final - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse é o repositório do projeto final do módulo de React do Ciclo formativo Básico da Pretalab. Projeto desenvolvido em React abordando todos os tópicos vistos durante a aula (Componentes, Props, Estados, Listas e Keys, Hooks, onChange e onClick, Context API em React, React Router DOM imagens e modularização do CSS, TDD).
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demonstração:
+❤️ [Link do projeto final hospedado no Vercel APP](https://legbrllportfolio.vercel.app/)
