@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+:root {
+    --primary-color: #fcb900;
+    --secondary-color: #ffffff;
+    --terciary-color: #abb8c3;
+    --link-color: #9b51e0;
+    --link-selected: #0693e3;
+    --background-section: #212121;
+}
+
+body {
+    font-family: 'VT323', monospace;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'VT323', monospace;
+}

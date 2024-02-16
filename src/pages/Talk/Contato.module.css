@@ -1,0 +1,112 @@
+/* Cabeçalho */
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.1em;
+    height: 0.5em;
+    background-color: var(--link-selected);
+    opacity: 70%;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { background-color: transparent; }
+    50% { background-color: var(--link-selected); }
+}
+
+.typing-effect {
+    overflow: hidden;
+    border-right: 1px solid var(--link-selected);
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: 5px; 
+    animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite alternate;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background: var(--background-section);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em; 
+}
+
+.tag {
+    color: var(--secondary-color);
+}
+
+.title {
+    color: var(--link-selected);
+    font-family: 'VT323', monospace;
+}
+
+.imgComentario img {
+    width: 50vw;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.fotoComentario {
+    background-color: var(--background-section);
+    padding-top: 10px;
+}
+
+/* Formulário */
+
+.formContainer {
+    width: 100%;
+    background-color: var(--background-section);
+}
+
+.form {
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formInput,
+.formTextArea {
+    width: 80%;
+    padding: 12px 32px;
+    border: 0.1em solid var(--terciary-color);
+    resize: vertical;
+    margin-bottom: 1rem;
+    font-family: 'VT323', monospace;
+    font-size: 1em;
+    background-color: var(--background-section);
+    color: var(--primary-color);
+}
+
+.formButton {
+    background-color: var(--link-selected);
+    border: none;
+    color: var(--secondary-color);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 1rem;
+    width: 80%;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+}
+
+.formButton:hover {
+    background-color: var(--link-color);
+}

@@ -1,0 +1,16 @@
+.botao {
+    background-color: var(--link-selected);
+    font-weight: 400;
+    font-size: 18px;
+    padding: 32px;
+    border: none; 
+    cursor: pointer;
+    color: var(--secondary-color);
+    margin: 32px 0;
+    font-family: 'VT323', monospace;
+}
+
+.botao:hover {
+    background-color: var(--link-color);
+    color: var(--secondary-color);
+}

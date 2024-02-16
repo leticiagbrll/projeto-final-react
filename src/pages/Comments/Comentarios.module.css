@@ -1,0 +1,150 @@
+/*Cabeçalho*/
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.1em;
+    height: 0.5em;
+    background-color: var(--link-selected);
+    opacity: 70%;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { background-color: transparent; }
+    50% { background-color: var(--link-selected); }
+}
+
+.typing-effect {
+    overflow: hidden;
+    border-right: 1px solid var(--link-selected);
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: 5px; 
+    animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite alternate;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--background-section);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em; 
+}
+
+.tag {
+    color: var(--secondary-color);
+}
+
+.title {
+    color: var(--link-selected);
+    font-family: 'VT323', monospace;
+}
+
+/*Imagem*/
+
+.imgComentario img {
+    width: 50vw;
+    height: 60vh;
+    object-fit: cover; /* Faça a imagem cobrir o contêiner */
+    display: block;
+    margin: 0 auto; /* Para centralizar a imagem horizontalmente */
+}
+
+.fotoComentario {
+    background-color: var(--background-section);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/*Caixa de Comentarios*/
+.list {
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    padding: 70px 60px;
+    margin: 0 auto;
+}
+
+.inputContainer {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--background-section);
+}
+
+.input {
+    background: var(--background-section);
+    border: 0.1em solid var(--terciary-color);
+    padding: 12px 24px;
+    height: 100px;
+    width: 70%; 
+    font-family: 'VT323', monospace;
+    font-size: 1.3em;
+    color: var(--primary-color);
+}
+
+.addContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.addTask {
+    background:var(--link-selected);
+    width: 150px;
+    border: 0;
+    color: var(--secondary-color);
+    padding: 14px;
+    cursor: pointer;
+}
+
+.addTask:hover {
+    background-color: var(--link-color);
+}
+
+.removeTask {
+    background:rgb(230, 79, 79);
+    margin: 2rem;
+    border-radius: 8px;
+    border: 0;
+    padding: 14px;
+    color: var(--secondary-color);
+    cursor:pointer;
+}
+
+.removeTask:hover {
+    background-color: var(--link-color);
+}
+
+.listItems {
+    list-style: none;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--background-section);
+}
+
+.listItems > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 0.7px solid #7e7d7d;
+    width: 60%;
+}
+
+.listItems li div p {
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}

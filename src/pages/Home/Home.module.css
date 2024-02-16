@@ -1,0 +1,114 @@
+/*Cabeçalho*/
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.1em;
+    height: 1em;
+    background-color: var(--primary-color);
+    opacity: 70%;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { background-color: transparent; }
+    50% { background-color: var(--primary-color); }
+}
+
+.typing-effect {
+    overflow: hidden;
+    border-right: 1px solid var(--secondary-color);
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: 5px; 
+    animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite alternate;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--background-section);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5em; 
+}
+
+.tag {
+    color: var(--secondary-color);
+}
+
+.title {
+    color: var(--primary-color);
+    font-family: 'VT323', monospace;
+}
+
+/*Corpo*/
+
+.introText {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--background-section);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'VT323', monospace;
+    font-weight: 530;
+    color: var(--secondary-color);
+    font-size: 1em;
+}
+
+.pretaLab {
+    background-color: var(--background-section);
+}
+
+.pretaLab h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    background: var(--background-section);
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5em; 
+}
+
+.sobrePretaLab {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: var(--background-section);
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    font-size: 1.3em;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.containerVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-section);
+    padding: 2rem;
+}
+
+.botaoPretaLab {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-section);
+    padding-top: 1px;
+}

@@ -1,0 +1,76 @@
+.hamburguer {
+    display: none;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--background-section);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu * {
+    font-family: 'VT323', monospace;
+}
+
+.item {
+    float: right;
+}
+
+.item .link {
+    font-size: 1.3em;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.item .link:hover {
+    color: var(--link-color);
+}
+
+.item .link:active {
+    color: var(--link-selected);
+}
+
+@media(max-width: 47.8125em) {
+    .hamburguer {
+        margin: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .item .link {
+        display: none;
+        transition: color 0.3s ease;
+    }
+
+    .hamburguerOpen {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        list-style-type: none;
+    }
+
+    .itemOpen .linkOpen {
+        font-size: 1.3em;
+        font-weight: 600;
+        display: block;
+        text-align: center;
+        padding: 0.875em 1em;
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+}
